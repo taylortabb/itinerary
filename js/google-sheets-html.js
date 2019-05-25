@@ -16,7 +16,7 @@ var visualization;
 
 function drawVisualization() {
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1s7uE2ePWM8JJuQ5WUDHj85qeMIMlk1ocBVczPEJXY5U&output=html&usp=sharing');
-    query.setQuery('SELECT A, B, C, D, E, F label B "Hill", C "Name", D "Time", E "Buggy", F "Note"');
+    query.setQuery('SELECT A, B, C, D, E, F');
     query.send(handleQueryResponse);
 }
 
