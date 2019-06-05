@@ -62,15 +62,35 @@
        <div class="collapsible">
         <h4>Itinerary</h4></div>
         <div class="content">  
-<a href="jp" class="button full">Japan</a>
-<a href="hk" class="button full">Hong Kong</a>
-<a href="sg" class="button full">Singapore</a>
-<a href="db" class="button full">Dubai</a>
-<a href="ey" class="button full">Egypt</a>
-<a href="is" class="button full">Israel</a>
 
-<br><br>
-      </div></div>
+          <div class="collapsible">
+        <button class="button full">Field Notes</button></div>
+        <div class="content">
+
+                    <form id="myForm" action="https://script.google.com/macros/s/AKfycbyrULxQlxcgInh7fyeQjqX44_oZRemp6Iuob83ec9sd_zhUvn4/exec" method="POST" target="hidden-form">
+
+   <input type="text" class="full" name="note" placeholder="Note">
+
+   <button type="submit" class="full" id="mySubmit" onclick="submit_form();">Submit</button>
+
+   <h4><ul class="results"></ul></h4>
+ </form>
+ <IFRAME style="display:none" name="hidden-form"></IFRAME>  
+
+
+</div>
+
+          <a href="jp" class="button full">Japan</a>
+          <a href="hk" class="button full">Hong Kong</a>
+          <a href="sg" class="button full">Singapore</a>
+          <a href="db" class="button full">Dubai</a>
+          <a href="ey" class="button full">Egypt</a>
+          <a href="is" class="button full">Israel</a>
+
+
+
+          <br><br>
+        </div></div>
 
 
 
@@ -100,6 +120,13 @@
     }
   </script>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  function submit_form() {
+    document.getElementById('myForm').submit();
+  }
+</script>
 
 </body>
 </html>

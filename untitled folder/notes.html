@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Field Notes</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74339615-3"></script>
+      <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-74339615-3');
+    </script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+     <div class="one-full column" style="margin-top: 5%">
+      <h4>Push Timer</h4>
+
+   <form id="myForm" action="https://script.google.com/macros/s/AKfycbyrULxQlxcgInh7fyeQjqX44_oZRemp6Iuob83ec9sd_zhUvn4/exec" method="POST" target="hidden-form">
+
+   <input type="text" name="note" placeholder="Note">
+
+   <button type="submit" id="mySubmit" onclick="submit_form();">Submit</button>
+
+   <h4><ul class="results"></ul><h4>
+ </form>
+ <IFRAME style="display:none" name="hidden-form"></IFRAME>  
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+  function submit_form() {
+    document.getElementById('myForm').submit();
+  }
+</script>
+
